@@ -1,49 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calvin Chang | Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header class="container">
     <h1>Calvin Chang</h1>
+    <p>B.Sc. Computer Science (UCSD, 2020) • Entry-level Software Developer</p>
     <nav>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+      <button id="theme-toggle">🌙 Dark Mode</button>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <section id="about">
-      <h2>About</h2>
-      <p>Entry-level CS graduate focused on building user-focused software and learning fast.</p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, Java, SQL</li>
-        <li>HTML/CSS, JavaScript, Git</li>
-        <li>OOP, Data Structures & Algorithms</li>
+      <h2>About Me</h2>
+      <p>
+        I’m a computer science graduate with hands-on experience in Python, Java, SQL, HTML/CSS, JavaScript, and Git.
+        I care about building clean, user-focused software and I’m comfortable learning fast, collaborating with teams,
+        and communicating clearly thanks to leadership and customer-facing experience as a Certified Trainer at Chipotle.
+      </p>
+      <ul class="tags">
+        <li>Python</li><li>Java</li><li>SQL</li><li>HTML/CSS</li><li>JavaScript</li><li>Git</li>
+        <li>OOP</li><li>Data Structures</li><li>Problem Solving</li><li>Teamwork</li>
       </ul>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <p>Coming soon…</p>
+      <div class="grid">
+        <!-- To-Do App -->
+        <article class="card">
+          <img src="todo-app/screenshot.png" alt="To-Do List App Screenshot">
+          <div class="card-body">
+            <h3>To-Do List App</h3>
+            <p>Polished to-do app with dark/light theme, CRUD interactions, and persistence via <code>localStorage</code>.</p>
+            <div class="tags small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="links">
+              <a href="https://github.com/calvinchang/todo-app" target="_blank">GitHub</a>
+              <a href="https://calvinchang.github.io/todo-app/" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Task Manager (placeholder) -->
+        <article class="card soon">
+          <div class="soon-badge">Coming soon</div>
+          <div class="card-body">
+            <h3>Task Manager</h3>
+            <p>Full-stack CRUD app with auth and database integration.</p>
+            <div class="tags small"><span>Node</span><span>Express</span><span>MongoDB</span></div>
+            <div class="links">
+              <a href="#" aria-disabled="true">GitHub</a>
+              <a href="#" aria-disabled="true">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Data Viz Dashboard (placeholder) -->
+        <article class="card soon">
+          <div class="soon-badge">Coming soon</div>
+          <div class="card-body">
+            <h3>Data Visualization Dashboard</h3>
+            <p>API ingestion with interactive charts and filters.</p>
+            <div class="tags small"><span>Python</span><span>Flask</span><span>Plotly</span></div>
+            <div class="links">
+              <a href="#" aria-disabled="true">GitHub</a>
+              <a href="#" aria-disabled="true">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Real-time Chat (placeholder) -->
+        <article class="card soon">
+          <div class="soon-badge">Coming soon</div>
+          <div class="card-body">
+            <h3>Real-time Chat</h3>
+            <p>Socket-based chat with rooms, typing indicators, and persistence.</p>
+            <div class="tags small"><span>React</span><span>Node</span><span>Socket.io</span></div>
+            <div class="links">
+              <a href="#" aria-disabled="true">GitHub</a>
+              <a href="#" aria-disabled="true">Live Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>calvin.chang.94@gmail.com • Cupertino, CA</p>
+      <p>Email: <a href="mailto:calvin.chang.94@gmail.com">calvin.chang.94@gmail.com</a></p>
+      <p>Phone: (408) 888-0932</p>
+      <p>GitHub: <a href="https://github.com/calvinchang" target="_blank">github.com/calvinchang</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/calvinchang" target="_blank">linkedin.com/in/calvinchang</a></p>
     </section>
   </main>
 
-  <footer><small>© Calvin Chang</small></footer>
-  <script src="js/script.js"></script>
+  <footer>
+    <p>&copy; 2025 Calvin Chang</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
